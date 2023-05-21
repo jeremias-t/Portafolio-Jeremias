@@ -31,13 +31,13 @@
 					<h2 class="logo">Jeremias/Torres</h2>
 					<ul class="navbar-nav">
 						<li class="nav-item ">
-							<a class="item-link" href="#">Inicio</a>
+							<a class="item-link" href="#sobre__mi">Sobre mi</a>
 						</li>
 						<li class="nav-item">
-							<a class="item-link" href="#">Quienes somos</a>
+							<a class="item-link" href="#Servicios">Servicios</a>
 						</li>
 						<li class="nav-item">
-							<a class="item-link" href="#">Contacto</a>
+							<a class="item-link" href="#contacto">Contacto</a>
 						</li>
 					</ul>
 				</div>
@@ -45,12 +45,12 @@
 		</nav>
 		<div class="hero__contenedor">
 			<h2 class="hero__titulo animate__animated animate__fadeInUp">!Hola¡ soy Jeremias</h2>
-			<button class="hero__boton"><a href="#">+informacion</a></button>
+			<a class="hero__boton" href="#sobre__mi"><img src="img/flecha.png" alt="flecha"></a>
 		</div>
 		<div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C218.68,145.56 442.71,-1.45 517.77,71.55 L500.00,150.00 L-8.17,158.39 Z" style="stroke: none; fill: #2a2f34;"></path></svg></div>
 	</header>
 
-	<section class="sobre__mi">
+	<section class="sobre__mi" id="sobre__mi">
 		<div class="sobre__contenido">
 			<h2 class="titulo">sobre mi</h2>
 			<p class="descripcion">Mi nombre es jeremias torres, y soy un apasionado desarrollador web con experiencia en la creación de soluciones digitales impactantes. Permíteme guiarte a través de mi mundo digital y mostrarte cómo puedo contribuir a tu próximo proyecto.</p>
@@ -70,11 +70,10 @@
 			<img class="leng__img" src="img/icons8-javascript-144.png" alt="javascript">
 			<img class="leng__img" src="img/icons8-node-js-144.png" alt="node.js">
 			<img class="leng__img" src="img/icons8-python-144.png" alt="python">
-			<img class="leng__img" src="img/icons8-javascript-144.png" alt="reac">
 		</div>
 	</section>
 
-	<section class="Servicios">
+	<section class="Servicios" id="Servicios">
 			<h2 class="titulo titulo__serv">Servicios que ofrezco:</h2>
 			<div class="Servicios__contenedor">
 				<div class="carta">
@@ -102,11 +101,11 @@
 	</section> 
 
 
-	<section class="contacto">
+	<section class="contacto" id="contacto">
 		<div class="form-container">
 			<h2>Formulario de Contacto</h2>
 
-		<form action="procesar_formulario.php" method="POST">
+		<form action="https://formsubmit.co/portafoliotorer830@gmail.com" method="POST">
 			<div class="form-group">
 				<label for="nombre">Nombre:</label>
 				<input type="text" id="nombre" name="nombre" required>
@@ -119,12 +118,15 @@
 
 			<div class="form-group">
 				<label for="mensaje">Mensaje:</label>
-				<textarea id="mensaje" name="mensaje" required></textarea>
+				<textarea id="coments" name="coments" cols="30" rows="5" required></textarea>
 			</div>
 
 			<div class="form-group">
 				<input type="submit" value="Enviar">
 			</div>
+
+			<input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+			<input type="hidden" name="_captcha" value="false">
 		</form>
 	</div>t
 	<div class="img__conacto">

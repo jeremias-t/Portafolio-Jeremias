@@ -14,6 +14,11 @@
 	align-items: center;
 	margin: 1rem;
 }
+
+.navbar{
+	position: fixed;
+}
+
 .logo{
 	color: #F5F5F5;
 	font-family: 'Roboto Mono', monospace;
@@ -60,20 +65,12 @@
 
 .hero__boton{
 	background-color: transparent;
-	border: solid 2px #86b7fe;
-	border-radius: 10px;
 	margin-top: 4rem;
 	padding: 6px;
-	
 }
 
-.hero__boton a{
-	text-decoration: none;
-	color: rgb(255, 255, 255);
-	font-size: 14px;
-	font-weight: 400;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
+.hero__boton img{
+	width: 62px;
 }
 
 .wave{
@@ -96,7 +93,16 @@
 	.hero__contenedor{
 		margin-top: 66px;
 	}
+	.navbar-collapse{
+		display: flex;
+		flex-direction: column;
+		margin: 1rem;
+	}
+	.nav-item {
+		margin-bottom: 1rem;
+	}
 }
+
 
 @media screen and (max-with:960px){
 
@@ -154,9 +160,6 @@
     box-shadow: -19px -20px 0px 6px #86b7fe;
 }
 
-.sobre__img:hover{
-	filter: grayscale(90%);
-}
 
 @media screen and (max-width: 480px) {
 
@@ -250,7 +253,7 @@
 
 .Lenguajes__imagenes {
 		display: grid;
-		grid-template-columns: repeat(6, 0.1fr);
+		grid-template-columns: repeat(5, 0.1fr);
 		grid-column-gap: 8px;
 		grid-row-gap: 8px;
 		align-content: center;
